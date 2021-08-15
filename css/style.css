@@ -47,3 +47,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.attribution {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 5rem;
+}
+
+.attribution__link {
+  color: #000;
+}
+
+.attribution__link:hover {
+  text-decoration: none;
+}

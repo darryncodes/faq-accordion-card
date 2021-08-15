@@ -1,0 +1,59 @@
+//COLORS
+
+$dark-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+$light-grey: hsl(240, 5%, 91%);
+
+//GRADIENT
+
+$violet: hsl(273, 75%, 66%);
+$blue: hsl(240, 73%, 65%);
+
+//FONT COLORS
+
+$dark-grey: hsl(237, 12%, 33%);
+$grey: hsl(240, 6%, 50%);
+
+//RESPONSIVE BREAKPOINTS
+
+$bp-desktop: 90em; //1440px
+$bp-tablet: 56.25em; //900px
+$bp-mobile: 40.625em; //650px
+
+//RESETS & RESPONSIVE FONT SIZES
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-tablet) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+        font-size: 50%;
+    }
+}
+
+body {
+    background-image: linear-gradient($violet, $blue);
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $grey;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

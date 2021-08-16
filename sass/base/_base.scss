@@ -15,6 +15,7 @@ $dark-grey: hsl(237, 12%, 33%);
 $grey: hsl(240, 6%, 50%);
 $black: #000;
 $black-2: rgba(0, 0, 0, 0.5);
+$white: #fff;
 
 //RESPONSIVE BREAKPOINTS
 
@@ -35,14 +36,6 @@ $bp-mobile: 40.625em; //650px
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-
-    @media only screen and (max-width: $bp-tablet) {
-        font-size: 56.25%;
-    }
-
-    @media only screen and (max-width: $bp-mobile) {
-        font-size: 50%;
-    }
 }
 
 body {

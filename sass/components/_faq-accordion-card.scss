@@ -3,7 +3,7 @@
 }
 
 .card {
-    background-color: $light-grey;
+    background-color: $white;
     border-radius: 2rem;
 
     padding: 5rem 0;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
 
-    background: url(../../img/bg-pattern-desktop.svg), $light-grey;
+    background: url(../../img/bg-pattern-desktop.svg), $white;
     background-position: -57rem 60%;
     background-repeat: no-repeat;
     position: relative;
@@ -59,11 +59,56 @@
         width: 50%;
         margin-left: auto;
 
+        justify-self: center;
+        align-self: center;
+
         @media only screen and (max-width: 1000px) {
             padding: 1rem;
             width: 90%;
             margin: 0 auto;
-            margin-top: 10rem;
+            margin-top: 5rem;
         }
     }
+}
+
+.accordion {
+    background-color: $white;
+    border: none;
+    outline: none;
+    width: 75%;
+    color: $black;
+    text-align: left;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+    }
+}
+
+.active,
+.accordion:hover {
+    background-color: $white;
+}
+
+.accordion::after {
+    content: url(../../img/icon-arrow-down.svg);
+    position: absolute;
+    right: 15rem;
+
+    @media only screen and (max-width: 1000px) {
+        right: 7rem;
+    }
+}
+
+.active::after {
+    content: url(../../img/icon-arrow-down.svg);
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
 }

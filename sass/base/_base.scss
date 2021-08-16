@@ -19,58 +19,67 @@ $white: #fff;
 
 //RESPONSIVE BREAKPOINTS
 
-$bp-desktop: 90em; //1440px
-$bp-tablet: 56.25em; //900px
-$bp-mobile: 40.625em; //650px
+$bp-tablet: 62.5em; //1000px
 
 //RESETS & RESPONSIVE FONT SIZES
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
-    background-image: linear-gradient($violet, $blue);
-    font-family: "Kumbh Sans", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: $grey;
+  background-image: linear-gradient($violet, $blue);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $grey;
 
-    margin: 2rem;
+  margin: 2rem;
 
-    min-height: 100vh;
+  min-height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-tablet) {
+    padding-top: 12rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .attribution {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $black-2;
-    margin-top: 5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: $black-2;
+  margin-top: 5rem;
 
-    &__link {
-        color: $black;
+  &__link {
+    color: $black;
 
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+      text-decoration: none;
     }
+  }
 }
 
 h1 {
-    color: $black;
-    text-transform: uppercase;
+  font-size: 3rem;
+  color: $black;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-tablet) {
+    text-align: center;
+  }
 }

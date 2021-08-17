@@ -52,6 +52,8 @@ body {
   justify-content: center;
   align-items: center;
 
+  animation: fadeIn 2.5s ease-in;
+
   @media only screen and (max-width: $bp-tablet) {
     padding-top: 12rem;
     padding-bottom: 3rem;

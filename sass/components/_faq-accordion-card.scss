@@ -9,7 +9,7 @@
   padding: 5rem 0;
   width: 90rem;
 
-  background: url(../../img/bg-pattern-desktop.svg), $white;
+  background: url(../img/bg-pattern-desktop.svg), $white;
   background-position: -57rem 60%;
   background-repeat: no-repeat;
   position: relative;
@@ -92,7 +92,7 @@
 }
 
 .accordion:after {
-  content: url(../../img/icon-arrow-down.svg);
+  content: url(../img/icon-arrow-down.svg);
   position: absolute;
   right: 9rem;
   transition: 0.3s;
@@ -103,7 +103,7 @@
 }
 
 .active:after {
-  content: url(../../img/icon-arrow-down.svg);
+  content: url(../img/icon-arrow-down.svg);
   transform: rotate(180deg);
   transition: 0.3s;
 }

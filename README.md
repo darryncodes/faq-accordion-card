@@ -35,7 +35,6 @@ Users should be able to:
 
 - [GitHub repo](https://github.com/darryncodes/faq-accordion-card)
 - [Solution URL](https://darryncodes.github.io/faq-accordion-card/)
-- [Live Site URL](https://www.darryncodes.co.uk/pages/faq-accordion-card.html)
 
 ## My process
 
